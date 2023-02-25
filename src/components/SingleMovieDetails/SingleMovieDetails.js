@@ -14,7 +14,6 @@ function SingleMovieDetails({currentMovie, trailerInfo}) {
         overview,
         release_date,
         poster_path,
-        id,
         vote_average
     } = currentMovie;
     const navigate = useNavigate();
