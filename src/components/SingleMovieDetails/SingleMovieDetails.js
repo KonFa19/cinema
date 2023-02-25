@@ -3,7 +3,6 @@ import {useContext} from "react";
 
 import css from './SingleMovieDetails.module.css';
 import {ThemeContext} from "../../App";
-import {Genres} from "../Genres/Genres";
 
 const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
 
