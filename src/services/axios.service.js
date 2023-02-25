@@ -4,7 +4,7 @@ import {baseURL} from "../configs";
 
 const axiosService = axios.create({baseURL});
 
-const _accessToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMzJhOGMzNDEyNmJiZGNhNmI5ZjllOGFhOGZhY2E1ZiIsInN1YiI6IjYzNGQ2NDIwMzg5ZGExMDA3OWU1ZTNiZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.5xwPrvnXa8qMsazAcQvrTWC_euL6Z9HwdiwJLsdhQe8';
+const _accessToken = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMWQ0Nzc3ZmYxOWIyZTQ1OWJiNjMxNDYwYjc2MDcyZiIsInN1YiI6IjYzZjAyNGZkNTI0OTc4MDA4ZWZjOWNlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.k-qxANdz4w8JjmaZ6qoyiiQF0kH6wTcCIP3R8VX-B1I';
 
 axiosService.interceptors.request.use((config) => {
     config.headers.Authorization = `Bearer ${_accessToken}`

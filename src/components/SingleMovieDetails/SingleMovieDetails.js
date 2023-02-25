@@ -27,7 +27,9 @@ function SingleMovieDetails({currentMovie, trailerInfo}) {
                 <img className={css.photo} src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt={title}/>
             </div>
             <div className={css.info}>
+                <h2>{title}</h2>
                 <div className={css.data}>
+                    <br/>
                     <span>Language: {original_language}</span>
                     <br/>
                     <span>Name: {original_title}</span>
