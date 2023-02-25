@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom";
 
-import {Footer, Header} from "../../components";
+import {Header} from "../../components";
 
 
 
@@ -11,7 +11,6 @@ function MainLayout() {
         <div >
             <Header/>
             <Outlet/>
-            <Footer/>
         </div>
     );
 }
