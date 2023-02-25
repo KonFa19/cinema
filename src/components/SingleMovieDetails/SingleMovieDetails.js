@@ -1,5 +1,4 @@
 import {useNavigate} from "react-router-dom";
-import {useSelector} from "react-redux";
 import {Button} from "@mui/material";
 
 import css from './SingleMovieDetails.module.css';
