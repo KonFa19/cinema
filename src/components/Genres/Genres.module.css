@@ -1,0 +1,11 @@
+.genres{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 20px;
+
+}
+.genres>button{
+    width: 9%;
+    margin: 4px;
+
+}

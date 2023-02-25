@@ -1,0 +1,25 @@
+.currentMovie {
+    width: 100%;
+    height: 700px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b2e3cf;
+
+}
+.currentMovie:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.3);
+}
+[data-theme='dark'] .currentMovie{
+    background-color: #272c33;
+    color:snow;
+}
+[data-theme='light'] .currentMovie{
+    background-color:#DEE4E7;
+    color: #37474F;
+
+}

@@ -1,18 +1,12 @@
 const baseURL = 'https://api.themoviedb.org/3';
-let posterURL = 'https://image.tmdb.org/t/p/w500';
 
-let urls = {
-
+const urls = {
     movies: '/discover/movie',
-    movie: '/movie',
     genres: '/genre/movie/list',
-    search: '/search/movie?query=',
-
-}
-
+    searchMovie:'/search/movie',
+    movieById:'/movie'
+};
 
 export {
-    baseURL,
-    urls,
-    posterURL
-}
+    baseURL, urls
+};
