@@ -1,7 +1,7 @@
 import {Button} from "@mui/material";
+import {useContext} from "react";
 
 import css from './SingleMovieDetails.module.css';
-import {useContext} from "react";
 import {ThemeContext} from "../../App";
 
 

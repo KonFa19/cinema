@@ -1,14 +1,14 @@
-
-import './App.css';
 import {Navigate, Route, Routes} from "react-router-dom";
 import {createContext, useState} from "react";
 
+import './App.css';
 import {MainLayout} from "./layouts";
 import {MovieDetailsPage, MoviesPage, NotFoundPage} from "./pages";
 
-export const ThemeContext=createContext(null)
 
-function App() {
+const ThemeContext=createContext(null)
+
+const App = () =>  {
     const [theme, setTheme] = useState('light');
 
     const toggle=()=>{
@@ -32,4 +32,7 @@ function App() {
     );
 }
 
-export default App;
+export {
+    App,
+    ThemeContext
+};

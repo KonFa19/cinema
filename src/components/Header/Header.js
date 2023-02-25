@@ -35,7 +35,6 @@ function Header() {
             </div>
 
 
-
             <div className={css.name}>
                 <h2 onClick={() => navigate('/movies')}>Cinema</h2>
             </div>
@@ -45,10 +44,12 @@ function Header() {
 
                 <div className={css.themeSwitcher}>
 
-                    <span>{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</span>
+                    <span>{theme === 'light' ? 'mode' : 'mode'}</span>
                     <ReactSwitch height={20} checked={theme === 'dark'} onChange={toggle}/>
 
                 </div>
+
+
                 <div className={css.user}>
                     <AccountCircleIcon fontSize={"large"}/>
                     <h4>User</h4>
