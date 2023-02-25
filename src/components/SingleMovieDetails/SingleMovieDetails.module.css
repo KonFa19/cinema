@@ -5,19 +5,20 @@
     flex-direction: row;
     align-items: center;
     background-color: #165a72;
-    color: snow;
-
 }
+
 .poster{
     width: 50%;
     height: 90%;
 }
+
 .photo{
-    width: 90%;
+    width: 60%;
     height: 90%;
     margin-left: 10px;
     border-radius: 10px;
 }
+
 .info{
     width: 50%;
     height: 90%;
@@ -31,6 +32,7 @@
     margin-left: 10px;
     margin-top: 5px;
 }
+
 .btn{
     height: 10%;
     display: flex;
@@ -41,15 +43,18 @@
     font-weight: bold;
     font-size: 30px;
 }
+
 .btn>button , a{
     height: 60%;
     width: 70%;
     margin: 10px;
 }
+
 [data-theme='dark'] .container{
     background-color: #272c33;
     color:snow;
 }
+
 [data-theme='light'] .container{
     background-color:#DEE4E7;
     color: #37474F;

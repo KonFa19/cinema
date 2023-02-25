@@ -1,5 +1,4 @@
 import {useNavigate} from "react-router-dom";
-import {Badge} from "@mui/material";
 import StarRatings from "react-star-ratings/build/star-ratings";
 
 import css from './MovieListCard.module.css'
@@ -8,7 +7,7 @@ import {ThemeContext} from "../../App";
 
 
 function MovieListCard({movie}) {
-    const {title, poster_path,vote_average,adult,original_language} = movie;
+    const {title, poster_path,vote_average} = movie;
 
     const navigate = useNavigate();
     const {theme} = useContext(ThemeContext);
@@ -21,8 +20,6 @@ function MovieListCard({movie}) {
 
     return (
         <div className={css.Card} onClick={setMovie} data-theme={theme}>
-            {adult && <Badge badgeContent={'+18'} color={"secondary"}/>}
-            <Badge badgeContent={original_language} color={"error"}/>
 
             <div className={css.CardInfo}>
 
@@ -31,7 +28,7 @@ function MovieListCard({movie}) {
                 <div className={css.info}>
 
                     <div className={css.name}>
-                        <span >Name: {title}</span>
+                        <h3 >{title}</h3>
                     </div>
                     <div className={css.infoRating}>
 
@@ -39,7 +36,7 @@ function MovieListCard({movie}) {
 
                         <StarRatings className={css.rating}
                                      rating={vote_average}
-                                     starRatedColor="yellow"
+                                     starRatedColor="orange"
                                      numberOfStars={10}
                                      name="rating"
                                      starDimension="15px"

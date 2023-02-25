@@ -2,7 +2,6 @@ import {useContext, useState} from "react";
 import {useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {Button} from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ReactSwitch from 'react-switch';
 
@@ -11,7 +10,7 @@ import css from './Header.module.css';
 import {movieActions} from "../../redux";
 
 
-function Header(props) {
+function Header() {
 
     const dispatch = useDispatch();
     const [query, setQuery] = useState();
@@ -34,16 +33,15 @@ function Header(props) {
 
                     <input type={"text"} placeholder={'search movie'} {...register('search movie')}
                            onChange={(e) => setQuery(e.target.value)}/>
-                    <Button variant="contained" size={"small"}>search</Button>
                 </form>
             </div>
             <div className={css.name}>
-                <h2 onClick={()=>navigate('/movies')}>BEST MOVIES</h2>
+                <h2 onClick={()=>navigate('/movies')}>Cinema</h2>
             </div>
             <div className={css.info}>
                 <div className={css.user}>
                     <AccountCircleIcon fontSize={"large"}/>
-                    <h5>username</h5>
+                    <h4>User</h4>
                 </div>
                 <div className={css.themeSwitcher}>
                     <span>{theme==='light'?'Light Mode':'Dark Mode'}</span>
