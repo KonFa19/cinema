@@ -34,5 +34,4 @@ const App = () =>  {
 
 export {
     App,
-    ThemeContext
-};
+    ThemeContext};
