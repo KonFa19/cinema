@@ -11,27 +11,28 @@ function SingleMovie(props) {
     const dispatch = useDispatch();
 
 
-    const {currentMovie,loading,trailer} = useSelector(state => state.movieReducer);
+    const {currentMovie, loading, trailer} = useSelector(state => state.movieReducer);
     console.log(trailer);
     const {id} = useParams();
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(movieActions.getById({id}))
 
-    },[id])
+    }, [id])
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(movieActions.getTrailerById({id}))
-    },[id])
-
-
+    }, [id])
 
 
     return (
-        <div className={css.currentMovie} >
-            {loading&&<h1>Loading.....</h1>}
-            {currentMovie&&<SingleMovieDetails key={currentMovie.id} currentMovie={currentMovie} trailerInfo={trailer}/>}
+        <div className={css.moviePage}>
+            <div className={css.currentMovie}>
+                {loading && <h1>Loading.....</h1>}
+                {currentMovie &&
+                    <SingleMovieDetails key={currentMovie.id} currentMovie={currentMovie} trailerInfo={trailer}/>}
 
+            </div>
         </div>
     )
 }

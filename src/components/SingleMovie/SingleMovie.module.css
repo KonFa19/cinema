@@ -1,21 +1,23 @@
+.moviePage{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
 .currentMovie {
-    width: 100%;
-    height: 700px;
+    width: 75%;
+    height: 550px;
     border-radius: 2px;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgb(236, 145, 20);
     transition: 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #b2e3cf;
 
 }
-.currentMovie:hover {
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.3);
-}
 [data-theme='dark'] .currentMovie{
-    background-color: #272c33;
+    background-color: #283f57;
     color:snow;
 }
 [data-theme='light'] .currentMovie{

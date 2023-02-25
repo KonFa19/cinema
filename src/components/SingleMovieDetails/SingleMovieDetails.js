@@ -7,13 +7,22 @@ import {useContext} from "react";
 import {ThemeContext} from "../../App";
 
 
-function SingleMovieDetails({currentMovie,trailerInfo}) {
-    const {title,original_language,original_title,overview,release_date,poster_path,id,vote_average} = currentMovie;
+function SingleMovieDetails({currentMovie, trailerInfo}) {
+    const {
+        title,
+        original_language,
+        original_title,
+        overview,
+        release_date,
+        poster_path,
+        id,
+        vote_average
+    } = currentMovie;
     const navigate = useNavigate();
     const {theme} = useContext(ThemeContext);
 
     const trailerKey = trailerInfo.find(trailerInfo => trailerInfo.type === "Trailer");
-    const linkTrailer=(trailerKey?.key)?`https://www.youtube.com/watch?v=${trailerKey.key}`:""
+    const linkTrailer = (trailerKey?.key) ? `https://www.youtube.com/watch?v=${trailerKey.key}` : ""
 
 
     return (
@@ -28,10 +37,16 @@ function SingleMovieDetails({currentMovie,trailerInfo}) {
                     <span>About: {overview}</span>
                     <span>Release: {release_date}</span>
                     <span>Rating: {vote_average}</span>
+
+                    <div className={css.trailer}>
+                        <Button className={css.trailerBtn} disabled={!linkTrailer} variant="contained"
+                                href={linkTrailer}>Watch trailer</Button>
+                    </div>
+
                 </div>
+
                 <div className={css.btn}>
                     <Button variant="contained" onClick={() => navigate(-1)}>BACK</Button>
-                   <Button disabled={!linkTrailer} variant="contained" href={linkTrailer}>Watch trailer</Button>
                 </div>
 
 
