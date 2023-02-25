@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    border-radius: 20px;
 }
 
 .btn{
@@ -24,11 +24,9 @@
 }
 
 [data-theme='dark'] .currentMovie{
-    background-color: #283f57;
     color:snow;
 }
 [data-theme='light'] .currentMovie{
     background-color:#DEE4E7;
     color: #37474F;
-
 }

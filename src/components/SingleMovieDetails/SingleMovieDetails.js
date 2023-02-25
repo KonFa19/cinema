@@ -3,13 +3,13 @@ import {useContext} from "react";
 
 import css from './SingleMovieDetails.module.css';
 import {ThemeContext} from "../../App";
+import {Genres} from "../Genres/Genres";
 
 const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
 
     const {
         title,
         original_language,
-        original_title,
         overview,
         release_date,
         poster_path,
@@ -32,8 +32,6 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
                 <div className={css.data}>
                     <br/>
                     <span>Language: {original_language}</span>
-                    <br/>
-                    <span>Name: {original_title}</span>
                     <br/>
                     <span>About: {overview}</span>
                     <br/>
