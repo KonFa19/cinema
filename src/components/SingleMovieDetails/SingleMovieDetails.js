@@ -4,8 +4,8 @@ import {useContext} from "react";
 import css from './SingleMovieDetails.module.css';
 import {ThemeContext} from "../../App";
 
+const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
 
-function SingleMovieDetails({currentMovie, trailerInfo}) {
     const {
         title,
         original_language,
@@ -15,6 +15,7 @@ function SingleMovieDetails({currentMovie, trailerInfo}) {
         poster_path,
         vote_average
     } = currentMovie;
+
     const {theme} = useContext(ThemeContext);
 
     const trailerKey = trailerInfo.find(trailerInfo => trailerInfo.type === "Trailer");

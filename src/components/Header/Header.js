@@ -10,7 +10,7 @@ import css from './Header.module.css';
 import {movieActions} from "../../redux";
 
 
-function Header() {
+const Header = () => {
 
     const dispatch = useDispatch();
     const [query, setQuery] = useState();

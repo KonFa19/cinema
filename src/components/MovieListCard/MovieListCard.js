@@ -6,7 +6,7 @@ import {useContext} from "react";
 import {ThemeContext} from "../../App";
 
 
-function MovieListCard({movie}) {
+const MovieListCard = ({movie}) => {
     const {title, poster_path,vote_average} = movie;
 
     const navigate = useNavigate();
@@ -51,3 +51,4 @@ function MovieListCard({movie}) {
 }
 
 export {MovieListCard};
+

@@ -1,6 +1,6 @@
 import {SingleMovie} from "../../components";
 
-function MovieDetailsPage(props) {
+const MovieDetailsPage = (props) => {
     return (
         <div>
             <SingleMovie/>
@@ -9,3 +9,5 @@ function MovieDetailsPage(props) {
 }
 
 export {MovieDetailsPage};
+
+

@@ -4,7 +4,7 @@ import css from "./MoviesPage.module.css"
 import {Genres, MovieList} from "../../components";
 import {usePagination} from "../../hooks";
 
-function MoviesPage() {
+const MoviesPage = () => {
     const [handeCurrentPage, totalPage] = usePagination();
 
     return (

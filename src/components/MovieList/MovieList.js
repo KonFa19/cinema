@@ -8,7 +8,7 @@ import {MovieListCard} from "../MovieListCard/MovieListCard";
 import css from './MovieList.module.css'
 
 
-function MovieList() {
+const MovieList = () => {
 
     const dispatch = useDispatch();
     const {theme} = useContext(ThemeContext);

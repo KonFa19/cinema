@@ -1,14 +1,14 @@
 import {useNavigate, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
+import {Button} from "@mui/material";
 
 import {movieActions} from "../../redux";
 import {SingleMovieDetails} from "../SingleMovieDetails/SingleMovieDetails";
 import css from './SingleMovie.module.css';
-import {Button} from "@mui/material";
 
 
-function SingleMovie() {
+const SingleMovie = () => {
     const dispatch = useDispatch();
 
 

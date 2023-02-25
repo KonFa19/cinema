@@ -5,7 +5,7 @@ import {Button} from '@mui/material'
 import {genresActions} from "../../redux/slices/genre.slice";
 import css from './Genres.module.css';
 
-const Genres=()=> {
+const Genres = () => {
     const {genres,genre} = useSelector(state=>state.genreReducer);
     const dispatch = useDispatch();
 
@@ -26,3 +26,4 @@ const Genres=()=> {
 }
 
 export {Genres};
+

@@ -6,7 +6,7 @@ import {Header} from "../../components";
 
 
 
-function MainLayout() {
+const MainLayout = () => {
     return (
         <div >
             <Header/>
@@ -16,3 +16,5 @@ function MainLayout() {
 }
 
 export {MainLayout};
+
+;
