@@ -1,13 +1,14 @@
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 
 import {movieActions} from "../../redux";
 import {SingleMovieDetails} from "../SingleMovieDetails/SingleMovieDetails";
 import css from './SingleMovie.module.css';
+import {Button} from "@mui/material";
 
 
-function SingleMovie(props) {
+function SingleMovie() {
     const dispatch = useDispatch();
 
 
@@ -18,12 +19,14 @@ function SingleMovie(props) {
     useEffect(() => {
         dispatch(movieActions.getById({id}))
 
-    }, [id])
+    },[id])
 
     useEffect(() => {
         dispatch(movieActions.getTrailerById({id}))
-    }, [id])
+    },[id])
 
+
+    const navigate = useNavigate();
 
     return (
         <div className={css.moviePage}>
@@ -33,6 +36,11 @@ function SingleMovie(props) {
                     <SingleMovieDetails key={currentMovie.id} currentMovie={currentMovie} trailerInfo={trailer}/>}
 
             </div>
+
+            <div className={css.btn}>
+                <Button variant="contained" onClick={() => navigate(-1)}>BACK</Button>
+            </div>
+
         </div>
     )
 }

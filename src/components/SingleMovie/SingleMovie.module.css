@@ -1,12 +1,14 @@
 .moviePage{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 3%;
 }
 
 .currentMovie {
-    width: 75%;
-    height: 550px;
+    width: 60%;
+    height: 650px;
     border-radius: 2px;
     box-shadow: 0 4px 8px 0 rgb(236, 145, 20);
     transition: 0.3s;
@@ -16,6 +18,11 @@
     flex-direction: column;
 
 }
+
+.btn{
+    margin-top: 50px;
+}
+
 [data-theme='dark'] .currentMovie{
     background-color: #283f57;
     color:snow;

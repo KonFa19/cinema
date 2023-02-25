@@ -1,4 +1,3 @@
-import {useNavigate} from "react-router-dom";
 import {Button} from "@mui/material";
 
 import css from './SingleMovieDetails.module.css';
@@ -16,7 +15,6 @@ function SingleMovieDetails({currentMovie, trailerInfo}) {
         poster_path,
         vote_average
     } = currentMovie;
-    const navigate = useNavigate();
     const {theme} = useContext(ThemeContext);
 
     const trailerKey = trailerInfo.find(trailerInfo => trailerInfo.type === "Trailer");
@@ -31,22 +29,21 @@ function SingleMovieDetails({currentMovie, trailerInfo}) {
             <div className={css.info}>
                 <div className={css.data}>
                     <span>Language: {original_language}</span>
+                    <br/>
                     <span>Name: {original_title}</span>
+                    <br/>
                     <span>About: {overview}</span>
+                    <br/>
                     <span>Release: {release_date}</span>
+                    <br/>
                     <span>Rating: {vote_average}</span>
 
                     <div className={css.trailer}>
-                        <Button className={css.trailerBtn} disabled={!linkTrailer} variant="contained"
+                        <Button disabled={!linkTrailer} variant="contained"
                                 href={linkTrailer}>Watch trailer</Button>
                     </div>
 
                 </div>
-
-                <div className={css.btn}>
-                    <Button variant="contained" onClick={() => navigate(-1)}>BACK</Button>
-                </div>
-
 
             </div>
 

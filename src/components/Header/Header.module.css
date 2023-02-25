@@ -6,23 +6,23 @@
     justify-content: space-between;
 }
 .name {
-    width: 40%;
+    width: 60%;
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     font-size: 30px;
 
 }
 .info{
-    width: 20%;
+    width: 15%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-right: 25px;
 }
 .search{
-    width: 40%;
+    width: 15%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -45,31 +45,24 @@
     margin-right: 30px;
 }
 .user{
-    width: 100%;
     height: 60%;
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-right: 30px;
 }
-.btnFavourite{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 30px;
-}
-.btnFavourite button{
-    font-size: 10px;
 
-}
 [data-theme='dark'] .main{
     background-color: black;
     color:snow;
 }
+
+
 [data-theme='light'] .main{
     background-color: slategrey;
     color: #002e3f;
 }
+
+
 @media screen and (max-width: 800px){
      .name{
         font-size: 15px;
