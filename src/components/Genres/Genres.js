@@ -20,7 +20,7 @@ const Genres = () => {
 
     return (
         <div className={css.genres}>
-            { genres.genres?.map(genre=><Button onClick={()=>handleCurrentGenre(genre.id)} variant="outlined" color="inherit">{genre.name}</Button>)}
+            { genres.genres?.map(genre=><Button onClick={()=>handleCurrentGenre(genre.id)} key={genre.id} variant="outlined" color="inherit">{genre.name}</Button>)}
         </div>
     )
 }

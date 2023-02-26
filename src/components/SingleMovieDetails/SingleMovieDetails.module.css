@@ -33,6 +33,10 @@
     margin-top: 5px;
 }
 
+.badge{
+    display: flex;
+}
+
 .trailer{
     display: flex;
     justify-content: center;

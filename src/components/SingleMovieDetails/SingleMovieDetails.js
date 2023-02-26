@@ -3,6 +3,7 @@ import {useContext} from "react";
 
 import css from './SingleMovieDetails.module.css';
 import {ThemeContext} from "../../App";
+import {GenreBadge} from "../GenreBadge/GenreBadge";
 
 const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
 
@@ -11,6 +12,7 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
         original_language,
         overview,
         release_date,
+        genres,
         poster_path,
         vote_average
     } = currentMovie;
@@ -29,6 +31,13 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
             <div className={css.info}>
                 <h2>{title}</h2>
                 <div className={css.data}>
+
+                    <div className={css.badge}>
+                        {
+                            genres.map(genre => <GenreBadge key={genre.id} genre={genre}/>)
+                        }
+                    </div>
+
                     <br/>
                     <span>Language: {original_language}</span>
                     <br/>
