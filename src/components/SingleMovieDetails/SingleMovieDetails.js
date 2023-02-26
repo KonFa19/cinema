@@ -28,9 +28,6 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
             </div>
             <div className={css.info}>
                 <h2>{title}</h2>
-
-
-
                 <div className={css.data}>
                     <br/>
                     <span>Language: {original_language}</span>
