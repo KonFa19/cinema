@@ -3,7 +3,7 @@ import {useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import ReactSwitch from 'react-switch';
+import {Switch} from "@mui/material";
 
 import {ThemeContext} from "../../App";
 import css from './Header.module.css';
@@ -44,8 +44,8 @@ const Header = () => {
 
                 <div className={css.themeSwitcher}>
 
-                    <span>{theme === 'light' ? 'mode' : 'mode'}</span>
-                    <ReactSwitch height={20} checked={theme === 'dark'} onChange={toggle}/>
+                    <span>{theme === 'light' ? 'theme' : 'theme'}</span>
+                    <Switch height={20} checked={theme === 'dark'} onChange={toggle}/>
 
                 </div>
 
