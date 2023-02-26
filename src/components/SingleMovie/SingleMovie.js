@@ -13,7 +13,6 @@ const SingleMovie = () => {
 
 
     const {currentMovie, loading, trailer} = useSelector(state => state.movieReducer);
-    console.log(trailer);
     const {id} = useParams();
 
     useEffect(() => {
