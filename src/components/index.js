@@ -4,4 +4,4 @@ export * from './Header/Header'
 export * from './SingleMovie/SingleMovie';
 export * from './SingleMovieDetails/SingleMovieDetails';
 export * from './Genres/Genres';
-export * from './GenreBadge/GenreBadge'
+export * from './GenreBadge/GenreBadge';

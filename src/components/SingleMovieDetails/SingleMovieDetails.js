@@ -48,11 +48,22 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
                     <span>Rating: {vote_average}</span>
 
                     <div className={css.trailer}>
-                        <Button  className={css.buttonTrailer} disabled={!linkTrailer} variant="contained"
-                                href={linkTrailer}>Watch trailer</Button>
+
+                        <iframe
+
+                            width="410"
+                            height="215"
+                            src={`https://www.youtube.com/embed/${trailerKey.key}?autoplay=1&origin=https://example.com`}
+                            />
+
                     </div>
 
                 </div>
+
+
+
+
+
 
             </div>
 
