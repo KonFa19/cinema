@@ -1,4 +1,3 @@
-import {Button} from "@mui/material";
 import {useContext} from "react";
 
 import css from './SingleMovieDetails.module.css';
@@ -20,7 +19,6 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
     const {theme} = useContext(ThemeContext);
 
     const trailerKey = trailerInfo.find(trailerInfo => trailerInfo.type === "Trailer");
-    const linkTrailer = (trailerKey?.key) ? `https://www.youtube.com/watch?v=${trailerKey.key}` : ""
 
 
     return (
