@@ -6,7 +6,7 @@ import {genresActions} from "../../redux/slices/genre.slice";
 import css from './Genres.module.css';
 
 const Genres = () => {
-    const {genres,genre} = useSelector(state=>state.genreReducer);
+    const {genres} = useSelector(state=>state.genreReducer);
     const dispatch = useDispatch();
 
     const handleCurrentGenre=(e)=>{
@@ -16,7 +16,7 @@ const Genres = () => {
 
     useEffect(()=>{
         dispatch(genresActions.getAll());
-    },[genres])
+    },[dispatch])
 
     return (
         <div className={css.genres}>
