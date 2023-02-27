@@ -48,8 +48,8 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
 
                         <iframe
 
-                            width="410"
-                            height="215"
+                            height="195"
+                            width="380"
                             src={`https://www.youtube.com/embed/${trailerKey?.key}?autoplay=1&origin=https://example.com`}
                             />
 
