@@ -21,6 +21,11 @@
 .btn{
     margin-top: 50px;
 }
+.buttonBack{
+    background: #464141;
+    width: 110%;
+}
+
 
 [data-theme='dark'] .currentMovie{
     color:snow;

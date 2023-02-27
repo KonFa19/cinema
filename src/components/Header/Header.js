@@ -36,7 +36,7 @@ const Header = () => {
 
 
             <div className={css.name}>
-                <h2 onClick={() => navigate('/movies')}>Cinema</h2>
+                <h2  className={css.headerName} onClick={() => navigate('/movies')}>Cinema</h2>
             </div>
 
 
@@ -44,7 +44,7 @@ const Header = () => {
 
                 <div className={css.themeSwitcher}>
 
-                    <span>{theme === 'light' ? 'theme' : 'theme'}</span>
+                    <span>{theme === 'light' ? '' : ''}</span>
                     <Switch height={20} checked={theme === 'dark'} onChange={toggle}/>
 
                 </div>

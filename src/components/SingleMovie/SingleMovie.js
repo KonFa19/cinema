@@ -33,11 +33,10 @@ const SingleMovie = () => {
                 {loading && <h1>Loading.....</h1>}
                 {currentMovie &&
                     <SingleMovieDetails key={currentMovie.id} currentMovie={currentMovie} trailerInfo={trailer}/>}
-
             </div>
 
             <div className={css.btn}>
-                <Button variant="contained" onClick={() => navigate(-1)}>BACK</Button>
+                <Button className={css.buttonBack} variant="contained" onClick={() => navigate(-1)}>BACK</Button>
             </div>
 
         </div>

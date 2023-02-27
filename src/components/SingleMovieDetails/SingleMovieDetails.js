@@ -48,7 +48,7 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
                     <span>Rating: {vote_average}</span>
 
                     <div className={css.trailer}>
-                        <Button disabled={!linkTrailer} variant="contained"
+                        <Button  className={css.buttonTrailer} disabled={!linkTrailer} variant="contained"
                                 href={linkTrailer}>Watch trailer</Button>
                     </div>
 

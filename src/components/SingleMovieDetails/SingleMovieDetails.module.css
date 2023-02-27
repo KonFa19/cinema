@@ -59,7 +59,12 @@
 }
 
 [data-theme='light'] .container{
-    background-color:#DEE4E7;
+    background-color: #868d8d;
     color: #37474F;
 
+}
+
+.buttonTrailer{
+    background: #464141;
+    font-size: large;
 }
