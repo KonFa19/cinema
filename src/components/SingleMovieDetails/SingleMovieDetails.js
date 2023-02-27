@@ -20,7 +20,6 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
 
     const trailerKey = trailerInfo.find(trailerInfo => trailerInfo.type === "Trailer");
 
-
     return (
         <div className={css.container} data-theme={theme}>
             <div className={css.poster}>
@@ -51,7 +50,7 @@ const SingleMovieDetails = ({currentMovie, trailerInfo}) => {
 
                             width="410"
                             height="215"
-                            src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1&origin=https://example.com`}
+                            src={`https://www.youtube.com/embed/${trailerKey?.key}?autoplay=1&origin=https://example.com`}
                             />
 
                     </div>
