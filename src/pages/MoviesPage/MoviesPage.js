@@ -13,7 +13,7 @@ const MoviesPage = () => {
             <MovieList/>
 
             <div className={css.pagination}>
-                <Pagination color={"primary"} count={totalPage} onChange={(e, page) => handeCurrentPage(page)}/>
+                <Pagination color={"primary"} count={totalPage} shape="rounded" onChange={(e, page) => handeCurrentPage(page)}/>
             </div>
 
         </div>
